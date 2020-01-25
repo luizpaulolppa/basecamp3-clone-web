@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Profile</title>
+
+    <link rel="shortcut icon" type="image/png" sizes="32x32"
+        href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #f6f2ef;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px 5px 3px 5px;
+            position: fixed;
+            width: 100%;
+            background-color: #f6f2ef;
+        }
+
+        .logo-home {
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .logo-item-nav {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .items-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .item-nav {
+            display: flex;
+            align-items: center;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .item-nav-menu {
+            height: 30px;
+            width: 30px;
+            background-color: blueviolet;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .container-panel {
+            display: flex;
+            justify-content: center;
+            padding: 52px 5px 20px 5px;
+        }
+
+        .panel {
+            max-width: 425px;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        .panel-card {
+            box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1), 0 10px 30px #f3ece8;
+            border-radius: 0.2em 0.2em 0 0;
+            background-color: #fff;
+        }
+
+        .box-photo-profile {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -20px;
+        }
+
+        .photo-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 128px;
+            width: 128px;
+            background-color: blueviolet;
+            border-radius: 64px;
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .btn-upload-photo {
+            cursor: pointer;
+            height: 32px;
+            width: 120px;
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .box-btn-upload-photo {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -10px;
+        }
+
+        .box-form {
+            padding: 10px 30px 40px 30px;
+        }
+
+        .btn-save {
+            background-color: #2da562;
+            border-color: #2da562;
+            border: 1px solid #d9d9d9;
+            color: #fff;
+            display: inline-block;
+            padding: 0.5em 1em;
+            border-radius: 1.5em;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo-home" src="https://help.basecamp.com/images/logo-bc.png" />
+
+        <div class="items-nav">
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/home-c921c7a5ea43e9ca5f53878b71ceb4b4a086cfc51bb40a3e0dab5e82c20d909f.svg" />
+                <strong>Home</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/pings-dc50fb471ed61083d8840658a9a22b49774764d2225b90aca2bfc9a94960729a.svg" />
+                <strong>Pings</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/inbox-01cf9aad826a47109f288d7f0a1ff3a9dab584abf8353526aa4754d7e532db00.svg" />
+                <strong>Hey!</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/activity-73734455698459c6f2507a2e011bc3c7af6a47f81a30c2d9530c8d5b6fd87448.svg" />
+                <strong>Activity</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/my-stuff-ecda53a4fff4b55d7ca244d1d67dd99ae1b3a674722dc2ebefad7fa11f3ce490.svg" />
+                <strong>My Stuff</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/search-8fa21ccc7a917cdfc05b14d6a95b40bcc0fd6c30af0ec78c24fe90c6a298d8f4.svg" />
+                <strong>Find</strong>
+            </div>
+        </div>
+
+        <div class="item-nav-menu">LP</div>
+    </nav>
+
+    <div class="container-panel">
+        <div class="panel">
+            <div class="panel-card">
+                <div class="box-photo-profile">
+                    <div class="photo-profile">LP</div>
+                </div>
+                <div class="box-btn-upload-photo">
+                    <div class="btn-upload-photo">Upload a photo…</div>
+                </div>
+
+                <div class="box-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title at Pilegi</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="short-bio">Short bio or current status</label>
+                        <input type="text" class="form-control" id="short-bio">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="time-zone">Time zone</label>
+                        <select class="form-control" id="time-zone">
+                            <option value="International Date Line West">(GMT-12:00) International Date Line West
+                            </option>
+                            <option value="American Samoa">(GMT-11:00) American Samoa</option>
+                            <option value="Midway Island">(GMT-11:00) Midway Island</option>
+                            <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                            <option value="Alaska">(GMT-09:00) Alaska</option>
+                            <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)
+                            </option>
+                            <option value="Tijuana">(GMT-08:00) Tijuana</option>
+                            <option value="Arizona">(GMT-07:00) Arizona</option>
+                            <option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+                            <option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+                            <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)
+                            </option>
+                            <option value="Central America">(GMT-06:00) Central America</option>
+                            <option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)
+                            </option>
+                            <option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+                            <option value="Mexico City">(GMT-06:00) Mexico City</option>
+                            <option value="Monterrey">(GMT-06:00) Monterrey</option>
+                            <option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                            <option value="Bogota">(GMT-05:00) Bogota</option>
+                            <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)
+                            </option>
+                            <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                            <option value="Lima">(GMT-05:00) Lima</option>
+                            <option value="Quito">(GMT-05:00) Quito</option>
+                            <option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
+                            <option value="Caracas">(GMT-04:00) Caracas</option>
+                            <option value="Georgetown">(GMT-04:00) Georgetown</option>
+                            <option value="La Paz">(GMT-04:00) La Paz</option>
+                            <option value="Puerto Rico">(GMT-04:00) Puerto Rico</option>
+                            <option value="Santiago">(GMT-04:00) Santiago</option>
+                            <option value="Newfoundland">(GMT-03:30) Newfoundland</option>
+                            <option selected="selected" value="Brasilia">(GMT-03:00) Brasilia</option>
+                            <option value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
+                            <option value="Greenland">(GMT-03:00) Greenland</option>
+                            <option value="Montevideo">(GMT-03:00) Montevideo</option>
+                            <option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+                            <option value="Azores">(GMT-01:00) Azores</option>
+                            <option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+                            <option value="Edinburgh">(GMT+00:00) Edinburgh</option>
+                            <option value="Lisbon">(GMT+00:00) Lisbon</option>
+                            <option value="London">(GMT+00:00) London</option>
+                            <option value="Monrovia">(GMT+00:00) Monrovia</option>
+                            <option value="UTC">(GMT+00:00) UTC</option>
+                            <option value="Amsterdam">(GMT+01:00) Amsterdam</option>
+                            <option value="Belgrade">(GMT+01:00) Belgrade</option>
+                            <option value="Berlin">(GMT+01:00) Berlin</option>
+                            <option value="Bern">(GMT+01:00) Bern</option>
+                            <option value="Bratislava">(GMT+01:00) Bratislava</option>
+                            <option value="Brussels">(GMT+01:00) Brussels</option>
+                            <option value="Budapest">(GMT+01:00) Budapest</option>
+                            <option value="Casablanca">(GMT+01:00) Casablanca</option>
+                            <option value="Copenhagen">(GMT+01:00) Copenhagen</option>
+                            <option value="Dublin">(GMT+01:00) Dublin</option>
+                            <option value="Ljubljana">(GMT+01:00) Ljubljana</option>
+                            <option value="Madrid">(GMT+01:00) Madrid</option>
+                            <option value="Paris">(GMT+01:00) Paris</option>
+                            <option value="Prague">(GMT+01:00) Prague</option>
+                            <option value="Rome">(GMT+01:00) Rome</option>
+                            <option value="Sarajevo">(GMT+01:00) Sarajevo</option>
+                            <option value="Skopje">(GMT+01:00) Skopje</option>
+                            <option value="Stockholm">(GMT+01:00) Stockholm</option>
+                            <option value="Vienna">(GMT+01:00) Vienna</option>
+                            <option value="Warsaw">(GMT+01:00) Warsaw</option>
+                            <option value="West Central Africa">(GMT+01:00) West Central Africa</option>
+                            <option value="Zagreb">(GMT+01:00) Zagreb</option>
+                            <option value="Zurich">(GMT+01:00) Zurich</option>
+                            <option value="Athens">(GMT+02:00) Athens</option>
+                            <option value="Bucharest">(GMT+02:00) Bucharest</option>
+                            <option value="Cairo">(GMT+02:00) Cairo</option>
+                            <option value="Harare">(GMT+02:00) Harare</option>
+                            <option value="Helsinki">(GMT+02:00) Helsinki</option>
+                            <option value="Jerusalem">(GMT+02:00) Jerusalem</option>
+                            <option value="Kaliningrad">(GMT+02:00) Kaliningrad</option>
+                            <option value="Kyiv">(GMT+02:00) Kyiv</option>
+                            <option value="Pretoria">(GMT+02:00) Pretoria</option>
+                            <option value="Riga">(GMT+02:00) Riga</option>
+                            <option value="Sofia">(GMT+02:00) Sofia</option>
+                            <option value="Tallinn">(GMT+02:00) Tallinn</option>
+                            <option value="Vilnius">(GMT+02:00) Vilnius</option>
+                            <option value="Baghdad">(GMT+03:00) Baghdad</option>
+                            <option value="Istanbul">(GMT+03:00) Istanbul</option>
+                            <option value="Kuwait">(GMT+03:00) Kuwait</option>
+                            <option value="Minsk">(GMT+03:00) Minsk</option>
+                            <option value="Moscow">(GMT+03:00) Moscow</option>
+                            <option value="Nairobi">(GMT+03:00) Nairobi</option>
+                            <option value="Riyadh">(GMT+03:00) Riyadh</option>
+                            <option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
+                            <option value="Tehran">(GMT+03:30) Tehran</option>
+                            <option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
+                            <option value="Baku">(GMT+04:00) Baku</option>
+                            <option value="Muscat">(GMT+04:00) Muscat</option>
+                            <option value="Samara">(GMT+04:00) Samara</option>
+                            <option value="Tbilisi">(GMT+04:00) Tbilisi</option>
+                            <option value="Volgograd">(GMT+04:00) Volgograd</option>
+                            <option value="Yerevan">(GMT+04:00) Yerevan</option>
+                            <option value="Kabul">(GMT+04:30) Kabul</option>
+                            <option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
+                            <option value="Islamabad">(GMT+05:00) Islamabad</option>
+                            <option value="Karachi">(GMT+05:00) Karachi</option>
+                            <option value="Tashkent">(GMT+05:00) Tashkent</option>
+                            <option value="Chennai">(GMT+05:30) Chennai</option>
+                            <option value="Kolkata">(GMT+05:30) Kolkata</option>
+                            <option value="Mumbai">(GMT+05:30) Mumbai</option>
+                            <option value="New Delhi">(GMT+05:30) New Delhi</option>
+                            <option value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
+                            <option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+                            <option value="Almaty">(GMT+06:00) Almaty</option>
+                            <option value="Astana">(GMT+06:00) Astana</option>
+                            <option value="Dhaka">(GMT+06:00) Dhaka</option>
+                            <option value="Urumqi">(GMT+06:00) Urumqi</option>
+                            <option value="Rangoon">(GMT+06:30) Rangoon</option>
+                            <option value="Bangkok">(GMT+07:00) Bangkok</option>
+                            <option value="Hanoi">(GMT+07:00) Hanoi</option>
+                            <option value="Jakarta">(GMT+07:00) Jakarta</option>
+                            <option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                            <option value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
+                            <option value="Beijing">(GMT+08:00) Beijing</option>
+                            <option value="Chongqing">(GMT+08:00) Chongqing</option>
+                            <option value="Hong Kong">(GMT+08:00) Hong Kong</option>
+                            <option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+                            <option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
+                            <option value="Perth">(GMT+08:00) Perth</option>
+                            <option value="Singapore">(GMT+08:00) Singapore</option>
+                            <option value="Taipei">(GMT+08:00) Taipei</option>
+                            <option value="Ulaanbaatar">(GMT+08:00) Ulaanbaatar</option>
+                            <option value="Osaka">(GMT+09:00) Osaka</option>
+                            <option value="Sapporo">(GMT+09:00) Sapporo</option>
+                            <option value="Seoul">(GMT+09:00) Seoul</option>
+                            <option value="Tokyo">(GMT+09:00) Tokyo</option>
+                            <option value="Yakutsk">(GMT+09:00) Yakutsk</option>
+                            <option value="Adelaide">(GMT+09:30) Adelaide</option>
+                            <option value="Darwin">(GMT+09:30) Darwin</option>
+                            <option value="Brisbane">(GMT+10:00) Brisbane</option>
+                            <option value="Canberra">(GMT+10:00) Canberra</option>
+                            <option value="Guam">(GMT+10:00) Guam</option>
+                            <option value="Hobart">(GMT+10:00) Hobart</option>
+                            <option value="Melbourne">(GMT+10:00) Melbourne</option>
+                            <option value="Port Moresby">(GMT+10:00) Port Moresby</option>
+                            <option value="Sydney">(GMT+10:00) Sydney</option>
+                            <option value="Vladivostok">(GMT+10:00) Vladivostok</option>
+                            <option value="Magadan">(GMT+11:00) Magadan</option>
+                            <option value="New Caledonia">(GMT+11:00) New Caledonia</option>
+                            <option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
+                            <option value="Srednekolymsk">(GMT+11:00) Srednekolymsk</option>
+                            <option value="Auckland">(GMT+12:00) Auckland</option>
+                            <option value="Fiji">(GMT+12:00) Fiji</option>
+                            <option value="Kamchatka">(GMT+12:00) Kamchatka</option>
+                            <option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
+                            <option value="Wellington">(GMT+12:00) Wellington</option>
+                            <option value="Chatham Is.">(GMT+12:45) Chatham Is.</option>
+                            <option value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
+                            <option value="Samoa">(GMT+13:00) Samoa</option>
+                            <option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option>
+                        </select>
+                        <small id="time-zone" class="form-text text-muted">Basecamp uses your time zone setting for
+                            email notifications, event reminders, your profile, and your notification settings.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="first-day">First day of the week</label>
+                        <select class="form-control" id="first-day">
+                            <option selected="selected" value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                        <small id="first-day" class="form-text text-muted">Basecamp uses this when presenting
+                            calendars.</small>
+                    </div>
+                    <button class="btn-save">Save my changes</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
