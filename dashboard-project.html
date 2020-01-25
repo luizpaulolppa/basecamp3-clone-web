@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ateliware HQ</title>
+
+    <link rel="shortcut icon" type="image/png" sizes="32x32"
+        href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #f6f2ef;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px 5px 3px 5px;
+            position: fixed;
+            width: 100%;
+            background-color: #f6f2ef;
+        }
+
+        .logo-home {
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .logo-item-nav {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .items-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .item-nav {
+            display: flex;
+            align-items: center;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .item-nav-menu {
+            height: 30px;
+            width: 30px;
+            background-color: blueviolet;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .container-panel {
+            display: flex;
+            justify-content: center;
+            padding: 52px 5px 20px 5px;
+        }
+
+        .panel {
+            max-width: 930px;
+            width: 100%;
+        }
+
+        .panel-card {
+            box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1), 0 10px 30px #f3ece8;
+            border-radius: 0.2em 0.2em 0 0;
+            background-color: #fff;
+        }
+
+        .title-project {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+
+        .description-project {
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .img-card-people {
+            width: 32px;
+            height: 32px;
+            line-height: 1em;
+            border-radius: 16px;
+            margin: 3px;
+        }
+
+        .project-avatars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 12px;
+        }
+
+        .btn-add-remove-people {
+            cursor: pointer;
+            height: 32px;
+            width: 150px;
+            border: 1px solid #d9d9d9;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .cards-grid-features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            padding-bottom: 45px;
+        }
+
+        .card-grid-feature {
+            height: 262px;
+            width: 262px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            margin: 7px;
+            padding: 18px;
+        }
+
+        .title-card-grid {
+            display: flex;
+            justify-content: center;
+            font-size: 17px;
+            font-weight: bold;
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 12px;
+        }
+
+        .info-card-grid {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .img-card-grid {
+            width: 80px;
+            height: 80px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .txt-card-grid {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo-home" src="https://help.basecamp.com/images/logo-bc.png" />
+
+        <div class="items-nav">
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/home-c921c7a5ea43e9ca5f53878b71ceb4b4a086cfc51bb40a3e0dab5e82c20d909f.svg" />
+                <strong>Home</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/pings-dc50fb471ed61083d8840658a9a22b49774764d2225b90aca2bfc9a94960729a.svg" />
+                <strong>Pings</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/inbox-01cf9aad826a47109f288d7f0a1ff3a9dab584abf8353526aa4754d7e532db00.svg" />
+                <strong>Hey!</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/activity-73734455698459c6f2507a2e011bc3c7af6a47f81a30c2d9530c8d5b6fd87448.svg" />
+                <strong>Activity</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/my-stuff-ecda53a4fff4b55d7ca244d1d67dd99ae1b3a674722dc2ebefad7fa11f3ce490.svg" />
+                <strong>My Stuff</strong>
+            </div>
+            <div class="item-nav">
+                <img class="logo-item-nav"
+                    src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/nav/search-8fa21ccc7a917cdfc05b14d6a95b40bcc0fd6c30af0ec78c24fe90c6a298d8f4.svg" />
+                <strong>Find</strong>
+            </div>
+        </div>
+
+        <div class="item-nav-menu">LP</div>
+    </nav>
+
+    <div class="container-panel">
+        <div class="panel">
+            <div class="panel-card">
+                <div class="title-project">ateliware HQ</div>
+                <div class="description-project">Company-wide announcements and stuff everyone needs to know.</div>
+                <div class="project-avatars">
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBP5jkwE=--552d16bc9a4f44c1bc5dad8a55c3ab9457d5c53b/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBF6SjQE=--dcda0442414f5878cbe0846c7f57767d173bc70c/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBDt1SAE=--ea49526450912db2afb6e97a17c0226d346b5c80/avatar-64-x3?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBKLURwE=--db5559c45254578aca71a02d68548179d00e55a1/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBOPLdwE=--980863edcc424cc6996528d8e8c033cf69ae271d/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBOVISgE=--e5a59a805b67a287fdb58455536a06b31987ed90/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBP5jkwE=--552d16bc9a4f44c1bc5dad8a55c3ab9457d5c53b/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBF6SjQE=--dcda0442414f5878cbe0846c7f57767d173bc70c/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBDt1SAE=--ea49526450912db2afb6e97a17c0226d346b5c80/avatar-64-x3?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBKLURwE=--db5559c45254578aca71a02d68548179d00e55a1/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBOPLdwE=--980863edcc424cc6996528d8e8c033cf69ae271d/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBOVISgE=--e5a59a805b67a287fdb58455536a06b31987ed90/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBP5jkwE=--552d16bc9a4f44c1bc5dad8a55c3ab9457d5c53b/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBF6SjQE=--dcda0442414f5878cbe0846c7f57767d173bc70c/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBDt1SAE=--ea49526450912db2afb6e97a17c0226d346b5c80/avatar-64-x3?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBKLURwE=--db5559c45254578aca71a02d68548179d00e55a1/avatar-64-x1?v=1" />
+                    <img class="img-card-people"
+                        src="https://bc3-production-assets-cdn.basecamp-static.com/4104185/people/BAhpBOPLdwE=--980863edcc424cc6996528d8e8c033cf69ae271d/avatar-64-x1?v=1" />
+                    <div class="btn-add-remove-people">Add/remove people</div>
+                </div>
+                <div class="cards-grid-features">
+                    <div class="card-grid-feature">
+                        <div class="title-card-grid">Campfire</div>
+                        <div class="info-card-grid">
+                            <img class="img-card-grid"
+                                src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/content_types/outlined/chat-bg-e2534f29e044a125769b0b5d315755dbcb5955604fac2eb2667b3d6ea622d2c5.svg" />
+
+                            <p class="txt-card-grid">Post announcements, pitch ideas, progress updates, etc. and keep
+                                feedback on-topic.</p>
+                        </div>
+                    </div>
+                    <div class="card-grid-feature">
+                        <div class="title-card-grid">Message Board</div>
+                        <div class="info-card-grid">
+                            <img class="img-card-grid"
+                                src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/content_types/outlined/message-bg-3362b580bdf21b3b47eed9b7ca9de3c3e279e52a9627bc1646b843442cdacea5.svg" />
+
+                            <p class="txt-card-grid">Post announcements, pitch ideas, progress updates, etc. and keep
+                                feedback on-topic.</p>
+                        </div>
+                    </div>
+                    <div class="card-grid-feature">
+                        <div class="title-card-grid">To-dos</div>
+                        <div class="info-card-grid">
+                            <img class="img-card-grid"
+                                src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/content_types/outlined/todo-bg-89bef7864666747be6cfb329bb4c4018c0d75a87fa7da93f2c7d5dd1ac4fac29.svg" />
+
+                            <p class="txt-card-grid">Post announcements, pitch ideas, progress updates, etc. and keep
+                                feedback on-topic.</p>
+                        </div>
+                    </div>
+                    <div class="card-grid-feature">
+                        <div class="title-card-grid">Schedule</div>
+                        <div class="info-card-grid">
+                            <img class="img-card-grid"
+                                src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/content_types/outlined/event-bg-86f8d497d3d1373900e41ad78b06e7bdb7cd3a0560b2f630521c0d28dc5644ce.svg" />
+
+                            <p class="txt-card-grid">Post announcements, pitch ideas, progress updates, etc. and keep
+                                feedback on-topic.</p>
+                        </div>
+                    </div>
+                    <div class="card-grid-feature">
+                        <div class="title-card-grid">Docs & Files</div>
+                        <div class="info-card-grid">
+                            <img class="img-card-grid"
+                                src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/content_types/outlined/document-bg-d01e203dbb9d4c8550c004fcc534c5e1fff6086c65864f0e81d612b49f4294a0.svg" />
+
+                            <p class="txt-card-grid">Post announcements, pitch ideas, progress updates, etc. and keep
+                                feedback on-topic.</p>
+                        </div>
+                    </div>
+                    <div class="card-grid-feature">
+                        <div class="title-card-grid">Automatic Check-ins</div>
+                        <div class="info-card-grid">
+                            <img class="img-card-grid"
+                                src="https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/content_types/outlined/question-bg-22b02e57924978ed53d1c46934115df02c44feafb4e20f869f94bc23417e4b7d.svg" />
+
+                            <p class="txt-card-grid">Post announcements, pitch ideas, progress updates, etc. and keep
+                                feedback on-topic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
