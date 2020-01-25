@@ -1,0 +1,23 @@
+{
+  "name": "basecamp3-clone-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizpaulolppa/basecamp3-clone-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizpaulolppa/basecamp3-clone-web/issues"
+  },
+  "homepage": "https://github.com/luizpaulolppa/basecamp3-clone-web#readme",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}
