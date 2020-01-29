@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
 
+import CreateAccount from './pages/CreateAccount'
+
 function App() {
   return (
-    <h1>Basecamp 3</h1>
+    <CreateAccount />
   );
 }
 

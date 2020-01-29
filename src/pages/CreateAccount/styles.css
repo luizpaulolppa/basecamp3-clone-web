@@ -1,0 +1,60 @@
+.container-login {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.img-logo {
+    height: 70px;
+    width: 70px;
+}
+
+.card-login {
+    width: 450px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1), 0 10px 30px #f3ece8;
+}
+
+.subtitle-card {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-log-in {
+    background-color: #2da562;
+    border-color: #2da562;
+    border: 1px solid #d9d9d9;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 23px;
+    width: 100%;
+    height: 48px;
+}
+
+.input-block {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: .375rem .75rem;
+}
