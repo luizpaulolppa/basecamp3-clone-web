@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './styles.css';
 import logo from '../../images/logo.svg';
 
 function CreateAccount() {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+
+    async function handleSubmit(e) {
+
+    }
 
     return (
+        <form onSubmit={handleSubmit}>
+
+        </form>
         <div className="container-login">
             <div className="container-img-logo">
                 <img className="img-logo" src={logo} alt="Logo Basecamp 3" />
@@ -19,6 +29,8 @@ function CreateAccount() {
                         id="username"
                         placeholder="Your username"
                         required
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
                     />
                 </div>
                 <div className="input-block">
@@ -28,6 +40,8 @@ function CreateAccount() {
                         id="email"
                         placeholder="Your email (e.g. julie@widgetco.com)"
                         required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="input-block">
@@ -37,6 +51,8 @@ function CreateAccount() {
                         id="password"
                         placeholder="Your password"
                         required
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
                 <button className="btn-log-in">Next</button>
