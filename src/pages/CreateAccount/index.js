@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 import './styles.css';
 import logo from '../../images/logo.svg';
 import api from '../../services/api';
 import Alert from '../../components/alert';
 
+import { createUser } from "../../services/localData";
+
 function CreateAccount() {
+    const history = useHistory();
+
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
@@ -21,15 +26,18 @@ function CreateAccount() {
             email
         }
 
-        try {
-            const respose = await api.post('/api/users', data);
-            setErrors([]);
-            console.log(respose.data);
-        } catch (ex) {
-            if (ex.response.data.errors) {
-                setErrors(ex.response.data.errors);
-            }
-        }
+        // try {
+        //     const respose = await api.post('/api/users', data);
+        //     setErrors([]);
+        //     console.log(respose.data);
+        // } catch (ex) {
+        //     if (ex.response.data.errors) {
+        //         setErrors(ex.response.data.errors);
+        //     }
+        // }
+
+        createUser(data);
+        history.push("/create-new-company");
     }
 
     return (

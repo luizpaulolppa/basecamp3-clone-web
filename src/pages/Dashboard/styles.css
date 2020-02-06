@@ -1,0 +1,177 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f2ef;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 5px 3px 5px;
+    position: fixed;
+    width: 100%;
+    background-color: #f6f2ef;
+}
+
+.logo-home {
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.logo-item-nav {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.items-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.item-nav-menu {
+    height: 30px;
+    width: 30px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container-panel {
+    display: flex;
+    justify-content: center;
+    padding: 20px 5px 20px 5px;
+}
+
+.panel {
+    max-width: 48rem;
+    width: 100%;
+}
+
+.project-index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #877457;
+    font-weight: normal;
+}
+
+.project-index-hr {
+    width: 100%;
+}
+
+.project-index-company {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.cards-panel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-panel {
+    max-width: 235px;
+    min-width: 235px;
+    max-height: 130px;
+    min-height: 130px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-panel-logo-company {
+    max-width: 235px;
+    min-width: 235px;
+    max-height: 130px;
+    min-height: 130px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo-company {
+    width: 155px;
+    height: 93px;
+}
+
+.card-people {
+    display: flex;
+}
+
+.img-card-people {
+    width: 24px;
+    height: 24px;
+    line-height: 1em;
+    border-radius: 12px;
+    margin: 3px;
+}
+
+.cont-card-people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    line-height: 1em;
+    border-radius: 12px;
+    margin: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font-size: 10px;
+    color: #877457;
+}
+
+.btn-new {
+    background-image: url(https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/plus-6855215a0ee7305a315874c1a0a5b6cbed1a6950911201a79b03703d36f41ce7.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25em auto;
+    padding-left: 2.10em;
+    background-position: 0.75em center;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+}
+
+.btn-options {
+    background-image: url(https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/overflow-51cd8be896d0981b46a99452c79d3cc3d447a5e8a883b55ad3ceb1080277c6e6.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25em auto;
+    padding-left: 1.5em;
+    background-position: 0.40em center;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+}
+
+.link-adminland {
+    position: absolute;
+    top: 3.5rem;
+    right: 0.5rem;
+    padding-left: 2.2rem;
+    opacity: 0.5;
+    background-image: url(https://bc3-production-assets-cdn.basecamp-static.com/assets/icons/basecamp_key-gray-472842291baefcf2d36062bed8920fba0d2f82dfc9bb3453fca5b3943005929f.svg);
+    background-position: left 1rem center;
+    background-repeat: no-repeat;
+    background-size: 1.0rem;
+    cursor: pointer;
+}
