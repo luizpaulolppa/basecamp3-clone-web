@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.css';
+import './styles.scss';
 import logoCompany from '../../images/logo_company.png';
 import logoPlus from '../../images/plus.svg';
 import ellipsis from '../../images/ellipsis.svg';

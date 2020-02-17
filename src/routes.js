@@ -7,6 +7,7 @@ import CreateAccount from './pages/CreateAccount';
 import CreateCompany from './pages/CreateCompany';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import Launchpad from './pages/Launchpad';
 
 const PrivateRouter = ({ component: Component, ...rest }) => (
     <Route
@@ -28,6 +29,7 @@ const Routes = () => (
             <PrivateRouter exact path="/create-new-account" component={CreateAccount} />
             <PrivateRouter exact path="/create-new-company" component={CreateCompany} />
             <PrivateRouter exact path="/dashboard" component={Dashboard} />
+            <PrivateRouter exact path="/launchpad" component={Launchpad} />
         </Switch>
     </BrowserRouter>
 );
