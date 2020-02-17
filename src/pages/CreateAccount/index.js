@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 
-import './styles.css';
+import './styles.scss';
 import logo from '../../images/logo.svg';
 import api from '../../services/api';
 import Alert from '../../components/alert';

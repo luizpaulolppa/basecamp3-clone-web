@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './styles.css';
+import './styles.scss';
 import logo from '../../images/logo.svg';
 import { createUser, getUser } from "../../services/localData";
 import { useHistory } from "react-router-dom";
